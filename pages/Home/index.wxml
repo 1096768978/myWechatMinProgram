@@ -10,6 +10,16 @@
   </swiper-item>
  </block>
 </swiper>
-<view>
-    我想学：<input class="search"></input> <button class="searchBtn">搜索</button>
+<view class="searchBox">
+   <text>我想学:</text> 
+   <input class="search" placeholder="请输入..." bindinput="getInput"></input> 
+   <button class="searchBtn" bindtap="search">搜索</button>
+</view>
+<text class="hot">热门🔥</text>
+<view class="mainBox" wx:for="{{booksList}}" wx:key="{{item.id}}">
+  <text>{{item.book}}</text>
+  <button bindtap="studyJs">开始学习!</button>
+</view>
+<view class="moreBtn">
+  <button bindtap="dialog">查看更多 》》</button>
 </view>
