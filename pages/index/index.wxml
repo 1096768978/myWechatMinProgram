@@ -1,0 +1,8 @@
+<view id="container">
+<image src="/images/bgBlue.jpg" id="examBg"></image>
+  <view>
+    <image src="/images/computer.jpg" class="computer"></image>
+    <text class="helloText">欢迎访问软件工程在线考试系统!</text>
+    <button class="startBtn" bindtap="jumpHome" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击获取信息并开始答题</button>
+  </view>
+</view>

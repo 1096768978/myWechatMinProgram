@@ -1,0 +1,45 @@
+/* pages/index/index.wxss */
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.computer {
+    width: 350rpx;
+    height: 350rpx;
+    border-radius: 5%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 1;
+}
+.helloText {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  z-index: 1;
+  color: #333;
+  font-weight: bold;
+}
+.startBtn{
+  position: absolute;
+  top: 62%;
+  left: 20%;
+  z-index: 1;
+  color:#333;
+  background-color:#8e44ad;
+  border-radius: 25rpx;
+}
+
+#examBg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background: fixed;
+}

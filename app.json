@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/Home/index",
+    "pages/Form/index",
+    "pages/practise/index",
+    "pages/record/index",
+    "pages/index/index"
+  ],
+    "window":{
+      "backgroundTextStyle":"light",
+      "navigationBarBackgroundColor": "#1B9CFC",
+      "navigationBarTitleText": "♥♥软件工程学习自测考试系统♥♥",
+      "navigationBarTextStyle":"black"
+    },
+    
+    "tabBar": {  
+     "color": "#a9b7b7",  
+     "selectedColor": "#FC427B",  
+     "borderStyle": "black" ,
+     "list": [{  
+       "selectedIconPath": "images/home.png",  
+       "iconPath": "images/home.png",  
+       "pagePath": "pages/Home/index",  
+       "text": "学习充电"  
+     }, {  
+       "selectedIconPath": "images/see.png",  
+       "iconPath": "images/see.png",  
+       "pagePath": "pages/Form/index",  
+       "text": "填写问卷"  
+     },{  
+       "selectedIconPath": "images/write.png",  
+       "iconPath": "images/write.png",  
+       "pagePath": "pages/practise/index",  
+       "text": "做练习题"  
+     },
+     {  
+      "selectedIconPath": "images/myrecords.png",  
+      "iconPath": "images/myrecords.png",  
+      "pagePath": "pages/record/index",  
+      "text": "我的历史"  
+    }
+     ]  
+   },
+  "sitemapLocation": "sitemap96.json"
+}
