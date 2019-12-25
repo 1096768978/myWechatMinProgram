@@ -1,1 +1,25 @@
 /* pages/practise/index.wxss */
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-container{
+  width: 90%;
+  height: 760rpx;
+  border: 30rpx groove greenyellow;
+  margin: 5rpx auto;
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+}
+.textBox{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10rpx;
+}
+.submit{
+  width: 40%;
+}

@@ -2,9 +2,10 @@
   "pages": [
     "pages/Home/index",
     "pages/Form/index",
-    "pages/practise/index",
+    "pages/practiseDemo/index",
     "pages/record/index",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/practise/index"
   ],
     "window":{
       "backgroundTextStyle":"light",
@@ -30,7 +31,7 @@
      },{  
        "selectedIconPath": "images/write.png",  
        "iconPath": "images/write.png",  
-       "pagePath": "pages/practise/index",  
+       "pagePath": "pages/practiseDemo/index",  
        "text": "做练习题"  
      },
      {  
