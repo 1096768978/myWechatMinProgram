@@ -69,8 +69,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/Form/index",
-					"pathName": "pages/Form/index",
+					"name": "pages/record/index",
+					"pathName": "pages/record/index",
 					"query": "",
 					"scene": null
 				}
