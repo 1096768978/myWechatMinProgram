@@ -30,6 +30,8 @@ Page({
     count: 0,
     time: '',
     index: '',
+    transition:'',
+    transform:'',
   },
 
   /*设置计数器5分钟*/
@@ -123,6 +125,10 @@ Page({
 
   },
   refresh: function () {
+    this.setData({
+      transform:this.data.transform = 'rotate(-180deg)',
+      transition: this.data.transition = 'all 0.5s'
+    })
     var that = this;
     var questions = that.data.questions;
     var questionsA = that.data.questionsA;

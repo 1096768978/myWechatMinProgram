@@ -1,0 +1,4 @@
+<!--pages/FormRe/index.wxml-->
+<view>{{info.sex}}</view>
+<button bindtap="getinfo">11111</button>
+<switch bindchange="onshow">显示信息？</switch>

@@ -1,2 +1,84 @@
 <!--pages/Form/index.wxml-->
-<text>我是问卷调查</text>
+<view wx:if="{{showFlag}}">
+<text>花几分钟填写问卷调查给我们反馈意见吧！</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <radio-group name="sex">
+    <radio value="男">男</radio>
+    <radio value="女">女</radio>
+  </radio-group>
+  <text>年龄:</text>
+  <slider show-value="true" name="age" value="18"></slider>
+  <text>学历:</text>
+  <radio-group name="gra">
+    <radio value="高中及以下">高中及以下</radio>
+    <radio value="大专">大专</radio>
+    <radio value="本科">本科</radio>
+    <radio value="硕士">硕士</radio>
+    <radio value="博士">博士</radio>
+  </radio-group>
+  <text>你希望教材的深度？</text>
+  <radio-group name="book">
+    <radio value="浅显">浅显</radio>
+    <radio value="中等">中等</radio>
+    <radio value="深入">深入</radio>
+  </radio-group>
+  <text>你希望题目的难易度？</text>
+  <radio-group name="model">
+    <radio value="容易">容易</radio>
+    <radio value="容易">中等</radio>
+    <radio value="略难">略难</radio>
+  </radio-group>
+  <text>所在地区:</text>
+  <input placeholder="省/市/区" name="place" value=""></input>
+  <text>联系方式:</text>
+  <input placeholder="手机号码或邮箱" name="phone" value=""></input>
+  <text>自我介绍和反馈:</text>
+  <textarea placeholder="200字以内哦..." name="my" value=""></textarea>
+  <checkbox-group bindchange="change">
+    <checkbox checked="{{checkFlag}}"></checkbox>
+    <text>我已经了解隐私政策</text>
+  </checkbox-group>
+  <view class="btn">
+  <button disabled="{{btnFlag}}" formType="submit">提交</button>
+  <button formType="reset">重置</button>
+  </view>
+</form>
+</view>
+<view wx:if="{{!showFlag}}">
+  <view class="table">
+    <view class="th" style="border-right: 1px solid #ccc;">我的信息</view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">你的性别</view>
+    <view class="td">{{sex}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">你的年龄</view>
+    <view class="td">{{age}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">你的学历</view>
+    <view class="td">{{gra}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">教材深度</view>
+    <view class="td">{{book}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">题目难易度</view>
+    <view class="td">{{model}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">所在地区</view>
+    <view class="td">{{place}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">联系方式</view>
+    <view class="td">{{phone}}</view>
+    </view>
+    <view class="tr">
+    <view class="td" style="border-right: 1px solid #ccc;">建议与反馈</view>
+    <view class="td">{{my}}</view>
+    </view>
+  </view>
+  <switch bindchange="reStart">我想重新填表</switch>
+</view>

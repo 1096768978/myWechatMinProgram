@@ -1,7 +1,4 @@
 <!--pages/Home/index.wxml-->
-<view class="textBox">
-<text class="text">开始愉快的学习吧！</text>
-</view>
 <swiper indicator-dots="{{indicatorDots}}"
  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
  <block wx:for="{{imgUrls}}" wx:key="unique">
@@ -22,4 +19,9 @@
 </view>
 <view class="moreBtn">
   <button bindtap="dialog">查看更多 》》</button>
+</view>
+<view class="mywechat">
+  <text>如果能帮到你</text>
+  <text>扫码打赏作者请他喝杯咖啡</text>
+  <image src="/images/myWechat.jpeg"></image>
 </view>

@@ -69,8 +69,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/practiseDemo/index",
-					"pathName": "pages/practiseDemo/index",
+					"name": "pages/Form/index",
+					"pathName": "pages/Form/index",
 					"query": "",
 					"scene": null
 				}

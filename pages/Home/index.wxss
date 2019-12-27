@@ -44,6 +44,8 @@ swiper {
   margin-top: 10rpx;
 }
 .searchBox text {
+  text-align: center;
+  vertical-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +84,9 @@ swiper {
     text-align: center;
     vertical-align: center;
     margin-top: 20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .moreBtn{
    margin-top: 20rpx;
@@ -90,4 +95,22 @@ swiper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mywechat {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 5rpx 0;
+}
+.mywechat text{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.mywechat image {
+  width: 150rpx;
+  height: 150rpx;
 }

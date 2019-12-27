@@ -43,3 +43,16 @@ page{
 view {
   background: #fff !important
 }
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx auto;
+}
+.active {
+  transition: all 0.5s;
+}
+.disActive {
+  transform: rotate(-180deg);
+  transition: all 0.5s;
+}
