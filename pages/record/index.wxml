@@ -1,22 +1,35 @@
 <!--pages/record/index.wxml-->
 <text>当前用户头像和昵称:</text>
 <view class="infoImg">
-<open-data type="userAvatarUrl"></open-data>
+	<open-data type="userAvatarUrl"></open-data>
 </view>
 <view class="infoName">
-<open-data type="userNickName" lang="zh_CN"></open-data>
+	<open-data type="userNickName" lang="zh_CN"></open-data>
 </view>
 <view class="main">
-  <view class="son"><image src="/images/lister.png"></image></view>
-  <view class="son"><image src="/images/moment.png"></image></view>
-  <view class="son"><image src="/images/my.png"></image></view>
-  <view class="son"><image src="/images/pay.png"></image></view>
+	<view class="son">
+		<image src="/images/lister.png"></image>
+	</view>
+	<view class="son">
+		<image src="/images/moment.png"></image>
+	</view>
+	<view class="son">
+		<image src="/images/my.png"></image>
+	</view>
+	<view class="son">
+		<image src="/images/pay.png"></image>
+	</view>
 </view>
 <view class="searchBox">
-   <text>我想学:</text> 
-   <input class="search" placeholder="请输入..." bindinput="getInput"></input> 
-   <button class="searchBtn" bindtap="search">搜索</button>
+	<text>我想学:</text>
+	<input class="search" placeholder="请输入..." bindinput="getInput"></input>
+	<button class="searchBtn" bindtap="search">搜索</button>
 </view>
+<view class="historyText">{{getInput}}</view>
+<view class="history">{{history1}} {{date1}}</view>
+<view class="history">{{history2}} {{date2}}</view>
+<view class="history">{{history3}} {{date3}}</view>
+<view class="history">{{history4}} {{date4}}</view>
 <view class="exitBtn">
-  <button bindtap="exit">退出</button>
+	<button bindtap="exit">退出</button>
 </view>
