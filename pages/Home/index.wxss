@@ -102,13 +102,14 @@ swiper {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
-  margin: 5rpx 0;
+  margin: 10rpx 0;
 }
 .mywechat text{
   display: flex;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
+  margin: 60rpx auto;
 }
 .mywechat image {
   width: 150rpx;
