@@ -1,4 +1,4 @@
-/* pages/books/index.wxss */
+/* pages/pybooks/index.wxss */
 view{
   width: 100%;
   height: 100%;

@@ -1,17 +1,19 @@
 <!--pages/practise/index.wxml-->
+<view class="main">
 <text class="nav">做题锻炼自己!</text>
 <view class="quiz-container">
-    <view id="quiz"></view>
-</view> 
+  <view id="quiz"></view>
+</view>
 <view class="btn">
-<button id="previous">上一题</button>
-<button id="next">下一题</button>
+  <button id="previous">上一题</button>
+  <button id="next">下一题</button>
 </view>
 <view class="textBox">
-<checkbox-group bindchange="change">
-<checkbox></checkbox>
-</checkbox-group>
-<text>全部答完才可以提交，我已知晓！</text>
+  <checkbox-group bindchange="change">
+    <checkbox></checkbox>
+  </checkbox-group>
+  <text>全部答完才可以提交，我已知晓！</text>
 </view>
 <button id="submit" class="submit" disabled="{{btnFlag}}">提交看分数！</button>
 <view id="results"></view>
+</view>

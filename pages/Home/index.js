@@ -43,10 +43,29 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    studyJs:function() {
-      wx.navigateTo({
-        url: '/pages/books/index',
-      })
+    studyJs:function(e) {
+      console.log(e.currentTarget.id)
+      if (e.currentTarget.id == 0){
+        wx.navigateTo({
+          url: '/pages/books/index',
+        })
+      } else if (e.currentTarget.id == 1){
+        wx.navigateTo({
+          url: '/pages/pybooks/index',
+        })
+      } else if (e.currentTarget.id == 2) {
+        wx.navigateTo({
+          url: '/pages/cbooks/index',
+        })
+      } else if (e.currentTarget.id == 3) {
+        wx.navigateTo({
+          url: '/pages/c++books/index',
+        })
+      } else if (e.currentTarget.id == 4) {
+        wx.navigateTo({
+          url: '/pages/mathbooks/index',
+        })
+      }
     },
     dialog:function() {
       wx.showModal({
@@ -55,11 +74,28 @@ Component({
       })
     },
     search:function() {
-      if (this.data.getInput === 'js' || this.data.getInput === 'py' || this.data.getInput             === 'c' || this.data.getInput==='算法'){
+      if (this.data.getInput === 'js' ||   this.data.getInput  === 'javaScript' ){
         wx.navigateTo({
           url: '/pages/books/index',
         })
-      }else{
+      } else if (this.data.getInput === 'py'){
+        wx.navigateTo({
+          url: '/pages/pybooks/index',
+        })
+      } else if (this.data.getInput === 'c') {
+        wx.navigateTo({
+          url: '/pages/cbooks/index',
+        })
+      } else if (this.data.getInput === 'c++') {
+        wx.navigateTo({
+          url: '/pages/c++books/index',
+        })
+      } else if (this.data.getInput === '算法') {
+        wx.navigateTo({
+          url: '/pages/mathbooks/index',
+        })
+      }
+      else{
       wx.navigateTo({
         url: '/pages/error/index',
       })}

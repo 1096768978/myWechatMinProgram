@@ -13,9 +13,9 @@
    <button class="searchBtn" bindtap="search">搜索</button>
 </view>
 <text class="hot">热门🔥</text>
-<view class="mainBox" wx:for="{{booksList}}" wx:key="{{item.id}}">
+<view class="mainBox" wx:for="{{booksList}}" wx:key="id" wx:for-index='key'>
   <text>{{item.book}}</text>
-  <button bindtap="studyJs">开始学习!</button>
+  <button bindtap="studyJs" id="{{key}}">开始学习!</button>
 </view>
 <view class="moreBtn">
   <button bindtap="dialog">查看更多 》》</button>

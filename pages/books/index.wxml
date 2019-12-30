@@ -1,4 +1,5 @@
 <!--pages/books/index.wxml-->
+<view>
 <text>
 JavaScript 简称JS，是一种脚本编程语言，它灵活轻巧，兼顾函数式编程和面向对象编程，是 Web 前端开发的唯一选择。JavaScript 还有很多框架，比如 jQuery、AngularJS、React 等，它们这是学习 JavaScript 的重要内容。
 
@@ -67,3 +68,4 @@ Web 浏览器只是 ECMAScript 实现的宿主环境之一。宿主环境不仅�
 
 IE3.0 和 Netscape Navigator 3.0 提供了一种新特性，即 BOM（浏览器对象模型）。使用 BOM 可以对浏览器窗口进行访问和操作，如移动窗口、访问历史记录、动态导航等。与 DOM 不同，BOM 只是 JavaScript 的一个部分，并没有形成规范性标准，但是所有浏览器都默认支持。
 </text>
+</view>
