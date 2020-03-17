@@ -8,5 +8,6 @@ App({
     place: '',
     phone: '',
     my: '',
+    userInfo: null,
   }
 })

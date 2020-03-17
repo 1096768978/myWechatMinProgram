@@ -24,7 +24,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.4",
+	"libVersion": "2.10.3",
 	"appid": "wxe724a4ac774aca6a",
 	"projectname": "exam-program",
 	"cloudfunctionTemplateRoot": "",
@@ -62,15 +62,22 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
+					"name": "pages/bar/index",
+					"pathName": "pages/bar/index",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 1,
-					"name": "pages/record/index",
-					"pathName": "pages/record/index",
+					"id": -1,
+					"name": "pages/line/index",
+					"pathName": "pages/line/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/gauge/index",
+					"pathName": "pages/gauge/index",
 					"query": "",
 					"scene": null
 				}

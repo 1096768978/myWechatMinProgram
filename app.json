@@ -5,12 +5,15 @@
     "pages/practiseDemo/index",
     "pages/record/index",
     "pages/index/index",
-    "pages/practise/index"
+    "pages/practise/index",
+    "pages/bar/index",
+    "pages/line/index",
+    "pages/gauge/index"
   ],
     "window":{
       "backgroundTextStyle":"light",
       "navigationBarBackgroundColor": "#1B9CFC",
-      "navigationBarTitleText": "♥♥软件工程学习自测系统♥♥",
+      "navigationBarTitleText": "《软件工程》学习平台",
       "navigationBarTextStyle":"black"
     },
     
