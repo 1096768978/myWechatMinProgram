@@ -18,7 +18,7 @@
   <button bindtap="studyJs" id="{{key}}">开始学习!</button>
 </view>
 <view class="moreBtn">
-  <button bindtap="dialog">查看更多 》》</button>
+  <button bindtap="dialog">查看更多</button>
 </view>
 <view class="mywechat">
   <text>如果能帮到你</text>
