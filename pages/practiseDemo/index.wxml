@@ -1,6 +1,6 @@
 <!--pages/practiseDemo/index.wxml-->
 
-<view class="contain" style="background:url('https://wx4.sinaimg.cn/mw690/006aTqkAgy1fqbxen973gj30g20sgdk1.jpg'); background-size: cover">
+<view class="contain">
   <view style="position:absolute; font-size:14px; left:10%; top:6%; right:10%; height:60rpx; line-height:60rpx; background:url('https://wx4.sinaimg.cn/mw690/006aTqkAgy1fqbxj98xa4j30vh0hq0tv.jpg'); background-size: cover">
     <text>做题锻炼自己！加油！{{time}}</text>
   </view>
