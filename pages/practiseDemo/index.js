@@ -195,9 +195,9 @@ Page({
                 rightcount: '',
                 errorcount: ''
             }
-            data.count = this.data.count
-            data.rightcount = this.data.rightcount
-            data.errorcount = this.data.errorcount
+            app.globalData.count = this.data.count
+            app.globalData.rightcount = this.data.rightcount * 5
+            app.globalData.errorcount = -(this.data.errorcount * 2)
             console.log(data)
             wx.showModal({
                 title: '温馨提示',

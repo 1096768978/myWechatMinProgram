@@ -1,11 +1,11 @@
 /* pages/index/index.wxss */
 
 #container {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 .computer {
@@ -13,26 +13,29 @@
     height: 350rpx;
     border-radius: 5%;
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 25%;
+    left: 30%;
     z-index: 1;
 }
+
 .helloText {
-  position: absolute;
-  top: 10%;
-  left: 22%;
-  z-index: 1;
-  color: #333;
-  font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    z-index: 1;
+    color: #333;
+    font-weight: bold;
 }
-.startBtn{
-  position: absolute;
-  top: 62%;
-  left: 20%;
-  z-index: 1;
-  color:#333;
-  background-color:#8e44ad;
-  border-radius: 25rpx;
+
+.startBtn {
+    position: absolute;
+    top: 75%;
+    left: 24%;
+    z-index: 1;
+    color: #fff;
+    background-color: #ff3366;
+    border-radius: 25rpx;
+    opacity: 0.9;
 }
 
 #examBg {

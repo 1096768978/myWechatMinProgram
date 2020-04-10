@@ -1,4 +1,5 @@
 import * as echarts from '../../ec-canvas/echarts';
+var app = getApp();
 
 let chart = null;
 
@@ -64,7 +65,7 @@ function initChart(canvas, width, height, dpr) {
                     }
                 },
                 //data: [300, 270, 340, 344, 300],
-                data: [25],
+                data: [app.globalData.count],
                 itemStyle: {
                     // emphasis: {
                     //   color: '#37a2da'
@@ -81,7 +82,7 @@ function initChart(canvas, width, height, dpr) {
                     }
                 },
                 //data: [280, 238, 219, 210, 210],
-                data: [3],
+                data: [app.globalData.rightcount],
                 itemStyle: {
                     // emphasis: {
                     //   color: '#32c5e9'
@@ -99,7 +100,7 @@ function initChart(canvas, width, height, dpr) {
                     }
                 },
                 //data: [-20, -32, -21, -34, -90],
-                data: [-22],
+                data: [app.globalData.errorcount],
                 itemStyle: {
                     // emphasis: {
                     //   color: '#67e0e3'
@@ -114,10 +115,10 @@ function initChart(canvas, width, height, dpr) {
 
 Page({
     data: {
-        errorcount: 0,
-        rightcount: 0,
-        count: 0,
-        sum: 0,
+        // errorcount: 0,
+        // rightcount: 0,
+        // count: 0,
+        // sum: 0,
         ec: {
             onInit: initChart
         }
@@ -126,25 +127,25 @@ Page({
         const eventChannel = this.getOpenerEventChannel()
             // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
         eventChannel.on('acceptDataFromOpenerPage', (data) => {
-            this.data.count = data.count
-            this.data.errorcount = (data.errorcount * 2)
-            this.data.sum = (data.errorcount + data.rightcount) * 5
-                // chart.setOption({
-                //     series: [{
-                //             // 根据名字对应到相应的系列
-                //             name: '总分',
-                //             data: this.data.sum
-                //         },
-                //         {
-                //             name: '得分',
-                //             data: this.data.count
-                //         },
-                //         {
-                //             name: '总分',
-                //             data: this.data.errorcount
-                //         }
-                //     ]
-                // })
+            // this.count = data.count
+            // this.errorcount = (data.errorcount * 2)
+            // this.sum = (data.errorcount + data.rightcount) * 5
+            // chart.setOption({
+            //     series: [{
+            //             // 根据名字对应到相应的系列
+            //             name: '总分',
+            //             data: this.data.sum
+            //         },
+            //         {
+            //             name: '得分',
+            //             data: this.data.count
+            //         },
+            //         {
+            //             name: '总分',
+            //             data: this.data.errorcount
+            //         }
+            //     ]
+            // })
             console.log(111, this.data)
         })
     },
