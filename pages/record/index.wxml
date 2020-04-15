@@ -21,9 +21,11 @@
 	</view>
 </view>
 <view class="searchBox">
-	<text>我想学:</text>
-	<input class="search" placeholder="请输入..." bindinput="getInput"></input>
-	<button class="searchBtn" bindtap="search">搜索</button>
+   <view class="searchMain">
+     <text style="margin-left:10px">课程  |</text>
+     <input class="search" placeholder="请输入课程名称..." bindinput="getInput" style="margin-left:5px;border:none;outline:medium;"></input>
+   </view> 
+   <button class="searchBtn" bindtap="search">搜索</button>
 </view>
 <view class="historyText">{{getInput}}</view>
 <view class="history">{{history1}} {{date1}}</view>

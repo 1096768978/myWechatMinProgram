@@ -31,9 +31,20 @@ swiper {
     margin: 0 auto;
 }
 
+.searchMain {
+    width: 80%;
+    height: 74rpx;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
 .search {
     width: 450rpx;
-    height: 70rpx;
     border: 1rpx solid #ccc;
     border-radius: 6px;
     display: flex;
@@ -44,19 +55,11 @@ swiper {
 
 .searchBox {
     width: 100%;
-    height: 100rpx;
-    display: flex;
-    justify-content: center;
-    margin-top: 10rpx;
-}
-
-.searchBox text {
-    text-align: center;
-    vertical-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    margin-top: 10rpx;
+    font-size: 14px;
 }
 
 .searchBtn {
@@ -71,7 +74,7 @@ swiper {
 .mainBox {
     width: 100%;
     display: flex;
-    align-content: space-around;
+    align-items: space-around;
 }
 
 .mainBox text {
@@ -115,14 +118,14 @@ swiper {
     height: 200rpx;
     display: flex;
     justify-content: space-around;
-    align-content: space-around;
+    align-items: space-around;
     margin: 10rpx 0;
 }
 
 .mywechat text {
     display: flex;
     justify-content: space-around;
-    align-content: space-around;
+    align-items: space-around;
     flex-wrap: wrap;
     margin: 60rpx auto;
 }
@@ -130,4 +133,32 @@ swiper {
 .mywechat image {
     width: 150rpx;
     height: 150rpx;
+}
+
+.goToBook {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.goToBook button {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    width: 50%;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px !important;
+    margin-top: 10px;
+}
+
+.goToBook text {
+    color: black;
+    font-size: 14px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goToBookBtn {
+    background-color: #FF3366 !important;
 }

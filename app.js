@@ -13,5 +13,7 @@ App({
         rightcount: 0,
         count: 50,
         sum: 0,
+        scrollTop: 0,
+        index: 0
     }
 })

@@ -1,9 +1,21 @@
 /* pages/gauge/index.wxss */
+
 .container {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 80vh;
 }
+
 ec-canvas {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.goToBook {
+    background-color: #ff3366;
+    border: 1px solid #ccc;
+    width: 50%;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px !important;
+    margin-top: 20px;
 }

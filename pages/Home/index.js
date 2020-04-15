@@ -1,4 +1,5 @@
 // pages/Home/index.js
+var app = getApp();
 Component({
     /**
      * 组件的属性列表
@@ -11,6 +12,7 @@ Component({
      * 组件的初始数据
      */
     data: {
+        scrollTop: 0,
         getInput: null,
         booksList: [{
                 book: '汇编语言程序设计',
@@ -48,28 +50,45 @@ Component({
      * 组件的方法列表
      */
     methods: {
+        goToBook: function() {
+            wx.navigateTo({
+                url: '/pages/gauge/index'
+            })
+        },
+        onShow: function() {
+            this.setData({
+                scrollTop: app.globalData.scrollTop
+            })
+            console.log("top", this.data.scrollTop)
+        },
         studyJs: function(e) {
             console.log(e.currentTarget.id)
             if (e.currentTarget.id == 0) {
                 wx.navigateTo({
                     url: '/pages/books/index',
                 })
+                app.globalData.index = 0
+                console.log(app.globalData.index)
             } else if (e.currentTarget.id == 1) {
                 wx.navigateTo({
                     url: '/pages/pybooks/index',
                 })
+                app.globalData.index = 1
             } else if (e.currentTarget.id == 2) {
                 wx.navigateTo({
                     url: '/pages/cbooks/index',
                 })
+                app.globalData.index = 2
             } else if (e.currentTarget.id == 3) {
                 wx.navigateTo({
                     url: '/pages/c++books/index',
                 })
+                app.globalData.index = 3
             } else if (e.currentTarget.id == 4) {
                 wx.navigateTo({
                     url: '/pages/mathbooks/index',
                 })
+                app.globalData.index = 4
             }
         },
         dialog: function() {

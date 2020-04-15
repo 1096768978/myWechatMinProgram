@@ -8,8 +8,10 @@
  </block>
 </swiper>
 <view class="searchBox">
-   <text>我想学:</text> 
-   <input class="search" placeholder="请输入..." bindinput="getInput"></input> 
+   <view class="searchMain">
+     <text style="margin-left:10px">课程  |</text>
+     <input class="search" placeholder="请输入课程名称..." bindinput="getInput" style="margin-left:5px;border:none;outline:medium;"></input>
+   </view> 
    <button class="searchBtn" bindtap="search">搜索</button>
 </view>
 <text class="hot">热门🔥</text>
@@ -20,8 +22,12 @@
 <view class="moreBtn">
   <button bindtap="dialog">查看更多</button>
 </view>
-<view class="mywechat">
+<!-- <view class="mywechat">
   <text>如果能帮到你</text>
   <text>扫码打赏作者请他喝杯咖啡</text>
   <image src="/images/myWechat.jpeg"></image>
+</view> -->
+<view wx:if="{{scrollTop !== 0}}" class="goToBook">
+  <text>系统检测到你有一本未阅读完成的书籍！</text>
+  <button hover-class="goToBookBtn" bindtap="goToBook">继续阅读</button>
 </view>

@@ -1,5 +1,5 @@
 <!--pages/cbooks/index.wxml-->
-<view>
+<view id="the-id">
   <text>
     C 语言是一种通用的高级语言，最初是由丹尼斯·里奇在贝尔实验室为开发 UNIX 操作系统而设计的。C 语言最开始是于 1972 年在 DEC PDP-11 计算机上被首次实现。
 

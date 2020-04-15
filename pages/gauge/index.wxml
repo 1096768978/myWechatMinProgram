@@ -2,3 +2,4 @@
 <view class="container">
   <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
 </view>
+<button class="goToBook" bindtap="goToBook">开始阅读</button>
