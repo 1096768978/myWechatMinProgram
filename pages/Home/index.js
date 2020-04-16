@@ -68,26 +68,31 @@ Component({
                     url: '/pages/books/index',
                 })
                 app.globalData.index = 0
+                app.globalData.bookName = '《汇编语言程序设计》'
                 console.log(app.globalData.index)
             } else if (e.currentTarget.id == 1) {
                 wx.navigateTo({
                     url: '/pages/pybooks/index',
                 })
                 app.globalData.index = 1
+                app.globalData.bookName = '《计算机网络原理与应用》'
             } else if (e.currentTarget.id == 2) {
                 wx.navigateTo({
                     url: '/pages/cbooks/index',
                 })
+                app.globalData.bookName = '《c语言程序设计》'
                 app.globalData.index = 2
             } else if (e.currentTarget.id == 3) {
                 wx.navigateTo({
                     url: '/pages/c++books/index',
                 })
+                app.globalData.bookName = '《操作系统原理》'
                 app.globalData.index = 3
             } else if (e.currentTarget.id == 4) {
                 wx.navigateTo({
                     url: '/pages/mathbooks/index',
                 })
+                app.globalData.bookName = '《数据结构》'
                 app.globalData.index = 4
             }
         },

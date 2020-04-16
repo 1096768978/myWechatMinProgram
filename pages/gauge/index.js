@@ -12,7 +12,7 @@ function initChart(canvas, width, height, dpr) {
 
     var option = {
         title: {
-            text: '你的进度为',
+            text: '你阅读的' + app.globalData.bookName + '进度为',
             left: 'center'
         },
         backgroundColor: "#ffffff",
@@ -63,8 +63,26 @@ Page({
         }
     },
     goToBook: function() {
-        wx.redirectTo({
-            url: '/pages/cbooks/index'
-        })
+        if (app.globalData.index === 0) {
+            wx.redirectTo({
+                url: '/pages/books/index'
+            })
+        } else if (app.globalData.index === 1) {
+            wx.redirectTo({
+                url: '/pages/pybooks/index'
+            })
+        } else if (app.globalData.index === 2) {
+            wx.redirectTo({
+                url: '/pages/cbooks/index'
+            })
+        } else if (app.globalData.index === 3) {
+            wx.redirectTo({
+                url: '/pages/c++books/index'
+            })
+        } else if (app.globalData.index === 4) {
+            wx.redirectTo({
+                url: '/pages/mathbooks/index'
+            })
+        }
     }
 });

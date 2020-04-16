@@ -1,5 +1,5 @@
 <!--pages/c++books/index.wxml-->
-<view>
+<view id="the-id">
   <text>
   <h3>操作系统原理</h3>
   操作系统是管理计算机硬件与软件资源的计算机程序，同时也是计算机系统的内核与基石。
