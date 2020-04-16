@@ -38,9 +38,9 @@
     <checkbox checked="{{checkFlag}}"></checkbox>
     <text>我已经了解隐私政策</text>
   </checkbox-group>
-  <view class="btn">
-  <button disabled="{{btnFlag}}" formType="submit">提交</button>
-  <button formType="reset">重置</button>
+  <view>
+  <button disabled="{{btnFlag}}" formType="submit" class="btn">提交</button>
+  <button formType="reset" class="btn">重置</button>
   </view>
 </form>
 </view>
@@ -81,4 +81,7 @@
     </view>
   </view>
   <switch bindchange="reStart">我想重新填表</switch>
+  <view>
+    <button class="replyBtn" bindtap="reply">确定提交</button>
+  </view>
 </view>

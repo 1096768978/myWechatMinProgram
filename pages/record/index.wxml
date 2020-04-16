@@ -32,6 +32,6 @@
 <view class="history">{{history2}} {{date2}}</view>
 <view class="history">{{history3}} {{date3}}</view>
 <view class="history">{{history4}} {{date4}}</view>
-<view class="exitBtn">
-	<button bindtap="exit">退出</button>
+<view>
+	<button bindtap="exit" class="exitBtn">退出</button>
 </view>
