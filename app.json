@@ -9,7 +9,8 @@
         "pages/bar/index",
         "pages/line/index",
         "pages/gauge/index",
-        "pages/reply/index"
+        "pages/reply/index",
+        "pages/login/index"
     ],
     "window": {
         "backgroundTextStyle": "light",

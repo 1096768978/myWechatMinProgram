@@ -1,0 +1,11 @@
+<!--pages/login/index.wxml-->
+<view id="box">
+  <text class="text">欢迎你管理员！</text>
+    <form action="">
+      <view class="loginText">账号</view>
+      <input class="loginInput" name="username" placeholder="请输入管理员账号..." bindinput="bindUserInput"/>
+      <view class="passwordText">密码</view>
+      <input class="passwordInput" name="password" placeholder="请输入管理员密码..." type="password" bindinput="bindKeyInput"/>
+    </form>
+    <button class="login" bindtap="goToHome">登录</button>
+</view>

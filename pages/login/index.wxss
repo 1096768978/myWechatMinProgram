@@ -1,0 +1,37 @@
+/* pages/login/index.wxss */
+
+.text {
+    text-align: center;
+    display: block;
+}
+
+.login {
+    margin-top: 80px;
+    width: 60%;
+    color: white;
+    font-size: 14px;
+    background-color: #FF3366;
+    border-radius: 25px;
+}
+
+.loginText {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.loginInput {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+.passwordText {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.passwordInput {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    height: 30px;
+}

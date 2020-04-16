@@ -5,6 +5,6 @@
     <text class="helloTextMy">我是</text>
     <button class="startBtnStu" bindtap="jumpHome" open-type="getUserInfo" bindgetuserinfo="getUserInfo">学生入口</button>
     <text class="helloTextOr">or</text>
-    <button class="startBtnTea" bindtap="jumpHome" open-type="getUserInfo" bindgetuserinfo="getUserInfo">教师入口</button>
+    <button class="startBtnTea" bindtap="jumpLogin" open-type="getUserInfo" bindgetuserinfo="getUserInfo">教师入口</button>
   </view>
 </view>
