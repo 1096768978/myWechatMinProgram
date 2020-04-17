@@ -1,10 +1,10 @@
 {
     "pages": [
+        "pages/index/index",
         "pages/Home/index",
         "pages/Form/index",
         "pages/practiseDemo/index",
         "pages/record/index",
-        "pages/index/index",
         "pages/practise/index",
         "pages/bar/index",
         "pages/line/index",

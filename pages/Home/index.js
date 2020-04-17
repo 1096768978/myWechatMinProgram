@@ -37,7 +37,7 @@ Component({
         ],
         imgUrls: [
             '/images/lunbo1.jpg',
-            '/images/lunbo2.jpg',
+            // '/images/lunbo2.jpg',
             '/images/lunbo3.jpg',
             '/images/lunbo4.jpg'
         ],
@@ -103,23 +103,23 @@ Component({
             })
         },
         search: function() {
-            if (this.data.getInput === 'js' || this.data.getInput === 'javaScript') {
+            if (this.data.getInput === '汇编' || this.data.getInput === '汇编语言程序设计') {
                 wx.navigateTo({
                     url: '/pages/books/index',
                 })
-            } else if (this.data.getInput === 'py') {
+            } else if (this.data.getInput === '计算机' || this.data.getInput === '计算机网络原理与应用') {
                 wx.navigateTo({
                     url: '/pages/pybooks/index',
                 })
-            } else if (this.data.getInput === 'c') {
+            } else if (this.data.getInput === 'C' || this.data.getInput === 'c语言' || this.data.getInput === 'c') {
                 wx.navigateTo({
                     url: '/pages/cbooks/index',
                 })
-            } else if (this.data.getInput === 'c++') {
+            } else if (this.data.getInput === '操作' || this.data.getInput === '操作系统原理') {
                 wx.navigateTo({
                     url: '/pages/c++books/index',
                 })
-            } else if (this.data.getInput === '算法') {
+            } else if (this.data.getInput === '算法' || this.data.getInput === '数据结构') {
                 wx.navigateTo({
                     url: '/pages/mathbooks/index',
                 })
