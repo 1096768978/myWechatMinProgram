@@ -111,7 +111,7 @@ Component({
                 wx.navigateTo({
                     url: '/pages/pybooks/index',
                 })
-            } else if (this.data.getInput === 'C' || this.data.getInput === 'c语言' || this.data.getInput === 'c') {
+            } else if (this.data.getInput === 'C' || this.data.getInput === 'c语言' || this.data.getInput === 'c' || this.data.getInput === 'c语言程序设计') {
                 wx.navigateTo({
                     url: '/pages/cbooks/index',
                 })
